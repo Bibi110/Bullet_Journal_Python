@@ -29,8 +29,8 @@ class Task:
     def status(self) -> str:
         return self._status
 
-    def complete(self) -> None:      # 4 espaces (déclare 'self' pour le 'if' en dessous !)
-        if self._status in (         # 8 espaces
+    def complete(self) -> None:     
+        if self._status in (       
             TaskStatus.DONE,
             TaskStatus.CANCELLED,
             TaskStatus.MIGRATED,
